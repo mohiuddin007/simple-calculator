@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="calc.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 class="text-center">ONLINE CALCULATOR</h1>
+    </div>
+    <div class="container-fluid mainPart">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="half-width">
+                    <img src="images/preview.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="calc-container mx-auto">
+                    <div class="calc-area mx-auto"> <!--display area-->
+                        <div class="calc-display">
+                            <div class="row"> 
+                                   <input type="text" id="display">
+                            </div>
+                        </div>
+                        <!--button area-->
+                        <div class="calc-inputArea">
+                            <div class="row">
+                                <button onclick="buttonSetting(7)" >7</button>
+                                <button onclick="buttonSetting(8)">8</button>
+                                <button onclick="buttonSetting(9)">9</button>
+                                <button onclick="buttonSetting('/')">/</button>
+                             </div>
+                            <div class="row">
+                                <button onclick="buttonSetting(4)">4</button>
+                                <button onclick="buttonSetting(5)">5</button>
+                                <button onclick="buttonSetting(6)">6</button>
+                                <button onclick="buttonSetting('*')">*</button>     
+                            </div>
+                            <div class="row">
+                                <button onclick="buttonSetting(1)">1</button>
+                                <button onclick="buttonSetting(2)">2</button>
+                                <button onclick="buttonSetting(3)">3</button>
+                                <button onclick="buttonSetting('-')">-</button>
+                            </div>
+                            <div class="row">
+                                <button onclick="clearBtn()" id="btnC">c</button>
+                                <button onclick="buttonSetting(0)">0</button>
+                                <button onclick="equal()">=</button>
+                                <button onclick="buttonSetting('+')" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
